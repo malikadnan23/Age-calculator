@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  padding: 10px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #cd84f1 100%);
+}
+.calculator {
+  width: 100%;
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.calculator h1 {
+  font-size: 60px;
+}
+
+.calculator span {
+  color: #fff200;
+}
+.input-box {
+  margin: 40px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+.input-box input {
+  outline: none;
+  border: none;
+  width: 70%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  /* background: transparent; */
+  font-size: 20px;
+  position: relative;
+}
+.input-box button {
+  width: 25%;
+  color: #fff200;
+  background-color: #cd84f1;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100%+10px);
+  background-size: 30px;
+  cursor: pointer;
+}
+
+#result {
+  color: #57606f;
+  padding: 10px;
+  margin-top: -20px;
+}
